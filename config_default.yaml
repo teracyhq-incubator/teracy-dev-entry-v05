@@ -1,0 +1,37 @@
+
+teracy-dev:
+  # teracy-dev location specification
+  location:
+    git: https://github.com/teracyhq/dev.git
+    branch: v0.6.0-a4
+    sync: true
+
+  # teracy-dev-entry auto update
+  entry_location:
+    git: https://github.com/teracyhq-incubator/teracy-dev-entry-v05.git
+    branch: develop
+    sync: true
+
+  extensions:
+    - _id: "0"
+      location:
+        branch: develop
+      require_version: ">= 0.4.0-SNAPSHOT"
+
+    - _id: "entry-0"
+      path:
+        extension: teracy-dev-essential
+      location:
+        git: https://github.com/teracyhq-incubator/teracy-dev-essential.git
+        branch: v0.1.0
+      require_version: ">= 0.1.0"
+      enabled: true
+
+    - _id: "entry-1"
+      path:
+        extension: teracy-dev-v05-compat
+      location:
+        git: https://github.com/teracyhq-incubator/teracy-dev-v05-compat.git
+        branch: develop
+      require_version: ">= 0.1.0-SNAPSHOT"
+      enabled: true
