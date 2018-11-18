@@ -12,7 +12,7 @@ $ cd ~/
 $ git clone https://github.com/teracyhq/dev.git -b v0.6.0-a5 teracy-dev-v05
 $ cd teracy-dev-v05
 $ TERACY_DEV_ENTRY_LOCATION_GIT_REMOTE_ORIGIN=https://github.com/teracyhq-incubator/teracy-dev-entry-v05.git \
-  TERACY_DEV_ENTRY_LOCATION_GIT_BRANCH=develop TERACY_DEV_ENTRY_LOCATION_SYNC=true \
+  TERACY_DEV_ENTRY_LOCATION_GIT_BRANCH=master TERACY_DEV_ENTRY_LOCATION_SYNC=true \
   vagrant up
 ```
 
