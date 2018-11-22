@@ -13,7 +13,7 @@ teracy-dev:
     git:
       remote:
         origin: https://github.com/teracyhq-incubator/teracy-dev-entry-v05.git
-      branch: develop
+      branch: master
     sync: true
 
   extensions:
