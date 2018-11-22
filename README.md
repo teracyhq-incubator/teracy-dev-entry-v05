@@ -12,7 +12,7 @@ $ cd ~/
 $ git clone https://github.com/teracyhq/dev.git -b v0.6.0-a5 teracy-dev-v05
 $ cd teracy-dev-v05
 $ TERACY_DEV_ENTRY_LOCATION_GIT_REMOTE_ORIGIN=https://github.com/teracyhq-incubator/teracy-dev-entry-v05.git \
-  TERACY_DEV_ENTRY_LOCATION_GIT_BRANCH=develop TERACY_DEV_ENTRY_LOCATION_SYNC=true \
+  TERACY_DEV_ENTRY_LOCATION_GIT_BRANCH=master TERACY_DEV_ENTRY_LOCATION_SYNC=true \
   vagrant up
 ```
 
@@ -37,4 +37,21 @@ You should see something like this at the end:
 ==> teracy-dev.local: Rsyncing folder: /Users/hoatle/teracy-dev-v05/workspace/ => /home/vagrant/workspace
 ==> teracy-dev.local:   - Exclude: [".vagrant/", ".git", ".idea", ".#*"]
 ==> teracy-dev.local: Watching: /Users/hoatle/teracy-dev-v05/workspace
+```
+
+
+## How to develop
+
+By default, the "master" branch is always synced. To develop, we must create and configure the `teracy-dev-entry/config_override.yaml` file, for example:
+
+
+```
+teracy-dev:
+
+  entry_location:
+    git:
+      remote:
+        origin: git@github.com:hoatle/teracy-dev-entry-v05.git # your forked repo
+        upstream: git@github.com:teracyhq-incubator/teracy-dev-entry-v05.git
+    sync: false # you must update the repo manually
 ```
