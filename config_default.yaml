@@ -5,7 +5,7 @@ teracy-dev:
     git:
       remote:
         origin: https://github.com/teracyhq/dev.git
-      branch: v0.6.0-a5
+      branch: v0.6.0-a8
     sync: true
 
   # teracy-dev-entry auto update
@@ -17,6 +17,13 @@ teracy-dev:
     sync: true
 
   extensions:
+    # use teracy-dev-core v0.4.0
+    - _id: "kernel-core"
+      location:
+        git:
+          branch: v0.4.0
+      require_version: ">= 0.4.0"
+
     - _id: "entry-essential"
       path:
         extension: teracy-dev-essential
@@ -24,8 +31,8 @@ teracy-dev:
         git:
           remote:
             origin: https://github.com/teracyhq-incubator/teracy-dev-essential.git
-          branch: v0.2.0
-      require_version: ">= 0.2.0"
+          branch: v0.3.0
+      require_version: ">= 0.3.0"
       enabled: true
 
     - _id: "entry-v05-compat"
@@ -35,6 +42,6 @@ teracy-dev:
         git:
           remote:
             origin: https://github.com/teracyhq-incubator/teracy-dev-v05-compat.git
-          branch: v0.2.0
-      require_version: ">= 0.2.0"
+          branch: v0.3.0
+      require_version: ">= 0.3.0"
       enabled: true
