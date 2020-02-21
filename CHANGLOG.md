@@ -1,5 +1,11 @@
 # Change Log
 
+## [v0.3.0][] (2020-02-21)
+
+- Improvements:
+  + should upgrade to use the latest released teracy-dev kernel and extensions #10
+
+Details: https://github.com/teracyhq-incubator/teracy-dev-entry-v05/milestone/2?closed=1
 
 ## [v0.2.0][] (2018-12-17)
 
@@ -19,4 +25,5 @@ the first initial release to set up a teracy-dev VM with v0.5 compatible feature
 
 
 [v0.2.0]: https://github.com/teracyhq-incubator/teracy-dev-entry-v05/milestone/1?closed=1
+[v0.3.0]: https://github.com/teracyhq-incubator/teracy-dev-entry-v05/milestone/2?closed=1
 
